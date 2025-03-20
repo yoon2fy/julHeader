@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>topBar</title>
-    <link rel="stylesheet" href="topBar.css"/>
-    <link rel="stylesheet" href="listSNS.css">
     <link rel="stylesheet" href="layout.css">
+
 </head>
 
 <body>
@@ -31,34 +30,46 @@
         </ul>
     </div>
 
+
+    <div class="topRight">
     <!-- SNS 이동 버튼튼 -->
-    <div class="topLink">
-        <div><a href=""><button type="button" class="snsBtn"title="SNS바로가기 열기">
-        <span>
-             <i class="m">대표 SNS</i>
-         </span></button>
-         <ul class="listSNS">
-            <li><a href="#" target="_blank" title="페이스북 새창으로 열림" rel="noopener nore">
-                <i class="xi-instagram"></i>
-                <span class="sr-only">페이스북</span>
-            </a></li>
-            <li><a href="#" target="_blank" title="인스타그램 새창으로 열림" rel="noopener nore">
-                <i class="xi-instagram"></i>
-                <span class="sr-only">인스타그램</span>
-            </a></li>
-            <li><a href="#" target="_blank" title="유튜브 새창으로 열림" rel="noopener nore">
-                <i class="xi-instagram"></i>
-                <span class="sr-only">유튜브</span>
-            </a></li>
-            <li><a href="#" target="_blank" title="블로그 새창으로 열림" rel="noopener nore">
-                <i class="xi-instagram"></i>
-                <span class="sr-only">블로그</span>
-            </a></li>
-         </ul>
+        <!-- SNS 링크 -->
+        <div class="topLink">
+
+            <div class="snsWrapper">
+            <div class="snsBtn" onclick="toggleSNSList()" title="SNS바로가기 열기">대표 SNS</div>
+            </button>
+            <ul class="listSNS">
+                <li><a href="#" target="_blank" title="페이스북 새창으로 열림" rel="noopener noreferrer">
+                    <i class="xi-facebook"></i>
+                    <span class="sr-only">페이스북</span>
+                </a></li>
+                <li><a href="#" target="_blank" title="인스타그램 새창으로 열림" rel="noopener noreferrer">
+                    <i class="xi-instagram"></i>
+                    <span class="sr-only">인스타그램</span>
+                </a></li>
+                <li><a href="#" target="_blank" title="유튜브 새창으로 열림" rel="noopener noreferrer">
+                    <i class="xi-youtube"></i>
+                    <span class="sr-only">유튜브</span>
+                </a></li>
+                <li><a href="#" target="_blank" title="블로그 새창으로 열림" rel="noopener noreferrer">
+                    <i class="xi-blog"></i>
+                    <span class="sr-only">블로그</span>
+                </a></li>
+            </ul>
+        </div>
          
 <!-- 알콜스탑 캠페인 -->
-        <div><a href="#" target="_blank" title="새창으로열림"><i class="xi-instagram"></i>알콜스탑 캠페인</a></div>
-    </div>
-</div>
+
+        <div class="campaignLink">
+        <a class="campaignText" href="#" target="_blank" title="새창으로 열림">
+        <i class="xi-campaign"></i>알콜스탑 캠페인
+        </a></div>
+        </div>
+        </div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
