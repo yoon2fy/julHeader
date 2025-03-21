@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'NanumSquareRound';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .topBar ul, li {
@@ -36,5 +36,5 @@
     background-color: #888;
     top: 0;         /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
     left: 100%;     /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
-    width: 100%;    /* 1차 메뉴의 너비를 상속 */
+    width: 100%;   
   }
