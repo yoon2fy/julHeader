@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d8e8f5;
+  background-color: #e6f2fb;
   padding: 20px 40px;
   position: relative;
 }
@@ -70,3 +70,201 @@
 .dropdown-wrapper:hover {
   display: block;
 }
+
+
+        /* 전체 헤더 스타일 */
+        .topService {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          background-color: #e6f2fb;
+          border-bottom: 1px solid #ddd;
+          font-family: 'Arial', sans-serif;
+      }
+
+
+      /* 왼쪽 절주온 버튼 */
+       .topserviceWrap {
+          display: flex;
+          align-items: center;
+          gap: 10px; /* 텍스트와 아이콘 간의 간격 설정 */
+      }
+      
+      .triangleIcon {
+          margin-left: 150px;
+          width: 8px;
+          height: auto;
+          vertical-align: middle;
+          transition: transform 0.3s ease;
+      }
+      
+      .triangleIcon.rotate {
+          transform: rotate(180deg);
+      }
+      
+      
+      .triangleIcon.rotate {
+          transform: rotate(180deg); /* 180도 회전 */
+      }
+      
+
+      .topBar {
+          position: relative;
+      }
+
+      .topBar ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+
+      .topBarbtn {
+          font-size: 14.4px;
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+          cursor: pointer;
+      }
+
+      /* 하위 메뉴 */
+      .subBar {
+          display: none;
+          position: absolute;
+          top: 34px;
+          left: 0;
+          background-color: #ffffff;
+          border: 1px solid #ddd;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          list-style: none;
+          margin: 20px;
+          padding: 10px 0;
+          z-index: 1000;
+          width: 240px;
+      }
+
+      .subBar li a {
+          position: block;
+          padding: 8px 15px;
+          display: inline-block;
+          text-decoration: none;
+          color: #333;
+          font-size: 14px;
+          overflow: hidden;
+      }
+      
+
+      .subBar li a::before {
+          content: "";
+          position: absolute;
+          bottom: 0; 
+          left: 0;
+          width: 0; 
+          height: 4px; 
+          background-color: #ffaba5;
+          transition: width 0.5s ease;
+      }
+      
+      .subBar li a:hover::before {
+          width: 100%;
+      }
+      
+      .subBar li a:hover {
+          color: #4662b6;
+      }
+
+
+      /* 오른쪽 SNS 및 캠페인 */
+      .topRight {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+
+      .snsWrapper {
+          position: relative;
+      }
+
+      .snsBtn {
+          display: inline-block;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: bold;
+          color: #333;
+          padding: 5px 10px;
+          border-radius: 5px;
+          text-align: center;
+      }
+
+      /* SNS 리스트 */
+      .listSNS {
+          display: none;
+          position: absolute;
+          top: 22.5px;
+          right: 0;
+          background-color: white;
+          border: 1px solid #ddd;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          z-index: 1000;
+          white-space: nowrap;
+      }
+
+      .listSNS li {
+          display: inline-block; 
+          margin-right: 10px;
+      }
+
+      .listSNS li a {
+          text-decoration: none;
+          font-size: 14px;
+          color: #333;
+      }
+
+      .listSNS li a:hover {
+          color: #9f9f9f;
+      }
+
+      .campaignLink {
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          color: #333;
+          align-items: center;
+          text-align: center;
+      }
+
+      .campaignLink:hover {
+          text-decoration: underline;
+      }
+
+      /* 헤더 아이콘 이미지 사이즈 */
+      .snsIcon {
+          weight: 14px;
+          height: 14px;
+      }
+
+      .fbIcon {
+          weight: 40px;
+          height: 40px;
+      }
+
+      .instaIcon {
+          weight: 40px;
+          height: 40px;
+      }
+
+      .youtubeIcon {
+          weight: 40px;
+          height: 40px;
+      }
+
+      .blogIcon {
+          weight: 40px;
+          height: 40px;
+      }
+
+      .campaigninsta{
+          weight: 14px;
+          height: 14px;
+      }
