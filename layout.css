@@ -124,3 +124,39 @@
         .campaignLink:hover {
             text-decoration: underline;
         }
+/*         아이콘 이미지 사이즈 */
+
+        .triangleIcon {
+            weight: 14px;
+             height: 14px;
+        }
+
+        .snsIcon {
+            weight: 14px;
+            height: 14px;
+        }
+
+        .fbIcon {
+            weight: 40px;
+            height: 40px;
+        }
+
+        .instaIcon {
+            weight: 40px;
+            height: 40px;
+        }
+
+        .youtubeIcon {
+            weight: 40px;
+            height: 40px;
+        }
+
+        .blogIcon {
+            weight: 40px;
+            height: 40px;
+        }
+
+        .campaigninsta{
+            weight: 14px;
+            height: 14px;
+        }
