@@ -75,6 +75,20 @@
             snsList.style.display = 'none';
         }
     });
+
+    function toggleSubBar() {
+    const subBar = document.getElementById('subBar');
+    const triangleIcon = document.querySelector('.triangleIcon');
+    
+    if (subBar.style.display === 'block') {
+        subBar.style.display = 'none';
+        triangleIcon.classList.remove('rotate');
+    } else {
+        subBar.style.display = 'block';
+        triangleIcon.classList.add('rotate');
+    }
+}
+
 </script>
 
 </body>
