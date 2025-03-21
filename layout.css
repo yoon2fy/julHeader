@@ -16,7 +16,21 @@
             font-family: 'Arial', sans-serif;
         }
 
+
         /* 왼쪽 절주온 버튼 */
+         .topserviceWrap {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* 텍스트와 아이콘 간의 간격 설정 */
+        }
+        
+        .triangleIcon {
+            margin-left: 150px; /* 추가 여백 설정 */
+            width: 8px; /* 아이콘 크기 조정 (필요하면 변경) */
+            height: auto;
+            vertical-align: middle; /* 텍스트와 아이콘 수직 정렬 */
+        }
+
         .topBar {
             position: relative;
         }
@@ -119,18 +133,15 @@
             font-weight: bold;
             text-decoration: none;
             color: #333;
+            align-items: center;
+            text-align: center;
         }
 
         .campaignLink:hover {
             text-decoration: underline;
         }
-/*         아이콘 이미지 사이즈 */
 
-        .triangleIcon {
-            weight: 14px;
-             height: 14px;
-        }
-
+        /* 헤더 아이콘 이미지 사이즈 */
         .snsIcon {
             weight: 14px;
             height: 14px;
