@@ -1,7 +1,231 @@
+
 /* style.css */
-/* JY let's go */
+
 /* -------------------------------------------------------
   Header Styles (헤더 영역)
+-------------------------------------------------------- */
+
+/* WJ let's go */
+/* -------------------------------------------------------
+  Header Styles (헤더 전체 스타일일)
+-------------------------------------------------------- */
+.topService {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e6f2fb;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Arial', sans-serif;
+}
+
+/* -------------------------------------------------------
+절주온 관련 사이트 이동 드롭다운 (헤더 상단 왼쪽 영역)
+-------------------------------------------------------- */
+.topserviceWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.triangleIcon {
+  margin-left: 150px;
+  width: 8px;
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.triangleIcon.rotate {
+  transform: rotate(180deg);
+}
+
+
+.triangleIcon.rotate {
+  transform: rotate(180deg);
+}
+
+
+.topBar {
+  position: relative;
+}
+
+.topBar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topBarbtn {
+  font-size: 14.4px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 하위 메뉴 */
+.subBar {
+  display: none;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 20px;
+  padding: 10px 0;
+  z-index: 1000;
+  width: 240px;
+}
+
+.subBar li a {
+  position: relative;
+  padding: 8px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 13.5px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.subBar li a::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 15px;
+  width: 0; 
+  height: 7px; 
+  background-color: rgba(245, 151, 148, 0.4);
+  transition: width 0.4s ease;
+}
+
+.subBar li a:hover::after {
+  width: 100%;
+}
+
+.subBar li a:hover {
+  color: #4662b6;
+}
+
+
+.subBar li.subBaron a {
+  color: #4662b6;
+  z-index: 1;
+}
+
+.subBar li.subBaron a::after {
+  width: 100%;
+  background-color: rgba(245, 151, 148, 0.4);
+}
+
+
+/* -------------------------------------------------------
+SNS 이동 버튼 및 캠페인 이동 (헤더 상단 오른쪽 영역)
+-------------------------------------------------------- */
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.snsWrapper {
+  position: relative;
+}
+
+.snsBtn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.listSNS {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.listSNS li {
+  display: inline-block; 
+  margin-right: 10px;
+}
+
+.listSNS li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.listSNS li a:hover {
+  color: #9f9f9f;
+}
+
+.campaignLink {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  align-items: center;
+  text-align: center;
+}
+
+.campaignLink:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------
+  헤더 아이콘 이미지 사이즈 조절 (헤더 영역)
+-------------------------------------------------------- */
+.snsIcon {
+  weight: 14px;
+  height: 14px;
+}
+
+.fbIcon {
+  weight: 40px;
+  height: 40px;
+}
+
+.instaIcon {
+  weight: 40px;
+  height: 40px;
+}
+
+.youtubeIcon {
+  weight: 40px;
+  height: 40px;
+}
+
+.blogIcon {
+  weight: 40px;
+  height: 40px;
+}
+
+.campaigninsta{
+  weight: 14px;
+  height: 14px;
+}
+
+
+/* JY let's go */
+
+/* -------------------------------------------------------
+  메인 로고 및 메뉴바 (헤더 영역)
 -------------------------------------------------------- */
 .header {
   display: flex;
@@ -15,6 +239,8 @@
 /* -------------------------------------------------------
   Main Navigation Menu Styles (메인 메뉴)
 -------------------------------------------------------- */
+
+
 .siteBnt {
   display: flex;
   list-style: none;
@@ -71,200 +297,3 @@
   display: block;
 }
 
-
-        /* 전체 헤더 스타일 */
-        .topService {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 20px;
-          background-color: #e6f2fb;
-          border-bottom: 1px solid #ddd;
-          font-family: 'Arial', sans-serif;
-      }
-
-
-      /* 왼쪽 절주온 버튼 */
-       .topserviceWrap {
-          display: flex;
-          align-items: center;
-          gap: 10px; /* 텍스트와 아이콘 간의 간격 설정 */
-      }
-      
-      .triangleIcon {
-          margin-left: 150px;
-          width: 8px;
-          height: auto;
-          vertical-align: middle;
-          transition: transform 0.3s ease;
-      }
-      
-      .triangleIcon.rotate {
-          transform: rotate(180deg);
-      }
-      
-      
-      .triangleIcon.rotate {
-          transform: rotate(180deg); /* 180도 회전 */
-      }
-      
-
-      .topBar {
-          position: relative;
-      }
-
-      .topBar ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-      }
-
-      .topBarbtn {
-          font-size: 14.4px;
-          text-decoration: none;
-          color: #333;
-          font-weight: bold;
-          cursor: pointer;
-      }
-
-      /* 하위 메뉴 */
-      .subBar {
-          display: none;
-          position: absolute;
-          top: 34px;
-          left: 0;
-          background-color: #ffffff;
-          border: 1px solid #ddd;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          list-style: none;
-          margin: 20px;
-          padding: 10px 0;
-          z-index: 1000;
-          width: 240px;
-      }
-
-      .subBar li a {
-          position: block;
-          padding: 8px 15px;
-          display: inline-block;
-          text-decoration: none;
-          color: #333;
-          font-size: 14px;
-          overflow: hidden;
-      }
-      
-
-      .subBar li a::before {
-          content: "";
-          position: absolute;
-          bottom: 0; 
-          left: 0;
-          width: 0; 
-          height: 4px; 
-          background-color: #ffaba5;
-          transition: width 0.5s ease;
-      }
-      
-      .subBar li a:hover::before {
-          width: 100%;
-      }
-      
-      .subBar li a:hover {
-          color: #4662b6;
-      }
-
-
-      /* 오른쪽 SNS 및 캠페인 */
-      .topRight {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-      }
-
-      .snsWrapper {
-          position: relative;
-      }
-
-      .snsBtn {
-          display: inline-block;
-          cursor: pointer;
-          font-size: 14px;
-          font-weight: bold;
-          color: #333;
-          padding: 5px 10px;
-          border-radius: 5px;
-          text-align: center;
-      }
-
-      /* SNS 리스트 */
-      .listSNS {
-          display: none;
-          position: absolute;
-          top: 22.5px;
-          right: 0;
-          background-color: white;
-          border: 1px solid #ddd;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          padding: 10px;
-          z-index: 1000;
-          white-space: nowrap;
-      }
-
-      .listSNS li {
-          display: inline-block; 
-          margin-right: 10px;
-      }
-
-      .listSNS li a {
-          text-decoration: none;
-          font-size: 14px;
-          color: #333;
-      }
-
-      .listSNS li a:hover {
-          color: #9f9f9f;
-      }
-
-      .campaignLink {
-          font-size: 14px;
-          font-weight: bold;
-          text-decoration: none;
-          color: #333;
-          align-items: center;
-          text-align: center;
-      }
-
-      .campaignLink:hover {
-          text-decoration: underline;
-      }
-
-      /* 헤더 아이콘 이미지 사이즈 */
-      .snsIcon {
-          weight: 14px;
-          height: 14px;
-      }
-
-      .fbIcon {
-          weight: 40px;
-          height: 40px;
-      }
-
-      .instaIcon {
-          weight: 40px;
-          height: 40px;
-      }
-
-      .youtubeIcon {
-          weight: 40px;
-          height: 40px;
-      }
-
-      .blogIcon {
-          weight: 40px;
-          height: 40px;
-      }
-
-      .campaigninsta{
-          weight: 14px;
-          height: 14px;
-      }
